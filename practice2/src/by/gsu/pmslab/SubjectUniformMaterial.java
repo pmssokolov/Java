@@ -1,16 +1,16 @@
 package by.gsu.pmslab;
 
 public class SubjectUniformMaterial {
-    private final static String name = "wire";
+    private final static String NAME = "wire";
     private UniformMaterial material;
-    private final static double volume = 0.03;
+    private final static double VOLUME = 0.03;
 
     public SubjectUniformMaterial(UniformMaterial material){
         this.material = material;
     }
 
     public String getName(){
-        return name;
+        return NAME;
     }
 
 
@@ -23,11 +23,11 @@ public class SubjectUniformMaterial {
 
 
     public double getMass(){
-        return volume * material.getDensity();
+        return VOLUME * material.getDensity();
     }
 
     @Override
     public String toString(){
-        return name+";"+material+";"+volume+";"+getMass();
+        return NAME+";"+material+";"+VOLUME+";"+getMass();
     }
 }
