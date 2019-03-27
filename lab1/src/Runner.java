@@ -20,7 +20,7 @@ public class Runner {
         for (Person item : persons){
             System.out.println(item);
         }
-        //Сортировка массива в порядке возрастания(число)
+        // Sorting array in ascending order(number)
         Arrays.sort(persons, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2){
@@ -31,7 +31,7 @@ public class Runner {
         for (Person item : persons){
             System.out.println(item);
         }
-        //Сортирока по алфавиту
+        // Sort alphabetically
         Arrays.sort(persons, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
