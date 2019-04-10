@@ -3,7 +3,7 @@ import by.gsu.pmslab.SubjectUniformMaterial;
 
 public class Runner {
     public static void main(String[] args) {
-        SubjectUniformMaterial wire = new SubjectUniformMaterial(UniformMaterial.STEEL);
+        SubjectUniformMaterial wire = new SubjectUniformMaterial(UniformMaterial.STEEL,"Wire",0.03);
 
         System.out.println(wire);
 
