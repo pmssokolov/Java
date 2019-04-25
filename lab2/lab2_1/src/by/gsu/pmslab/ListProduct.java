@@ -1,4 +1,5 @@
-import by.gsu.pmslab.*;
+package by.gsu.pmslab;
+
 
 public class ListProduct  {
 

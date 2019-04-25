@@ -2,7 +2,7 @@ package by.gsu.pmslab;
 
 abstract public class Yogurt implements DairyProduct {
 
-    private String str;
+    private String nameManufacture;
     private String shelf_life;
     private String amount_of_protein;
     private String fatness;

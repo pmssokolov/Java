@@ -4,7 +4,6 @@ public class Kefir extends DairyProduct {
 
     private int volume;
     private int bifidobacteriums;
-    private String str;
 
     public Kefir(){
         super();
@@ -33,18 +32,19 @@ public class Kefir extends DairyProduct {
 
     @Override
     public String Manufacturer(){
-        str = "";
+        String nameManufacture = "";
+
         if (getName().equals("BrestLitovsk")){
-            str = "Brest";
+            nameManufacture = "Brest";
         }
         else if (getName().equals("Savushkin product")){
-            str = "Minsk";
+            nameManufacture = "Minsk";
         }
         else if (getName().equals("Prostokvashino")){
-            str = "Gomel";
+            nameManufacture = "Gomel";
         }
         else System.out.println("error");
-        return str;
+        return nameManufacture;
     }
 
     public String toString(){

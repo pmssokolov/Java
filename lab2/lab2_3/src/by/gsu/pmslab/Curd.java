@@ -4,7 +4,6 @@ public class Curd implements DairyProduct {
 
     private int mass;
     private String grain;
-    private String str;
     private String shelf_life;
     private String amount_of_protein;
     private String fatness;
@@ -60,18 +59,19 @@ public class Curd implements DairyProduct {
 
     @Override
     public String Manufacturer(){
-        str = "";
+        String nameManufacture = "";
+
         if (getName().equals("BrestLitovsk")){
-            str = "Brest";
+            nameManufacture = "Brest";
         }
         else if (getName().equals("Savushkin product")){
-            str = "Minsk";
+            nameManufacture = "Minsk";
         }
         else if (getName().equals("Prostokvashino")){
-            str = "Gomel";
+            nameManufacture = "Gomel";
         }
         else System.out.println("error");
-        return str;
+        return nameManufacture;
     }
 
     public String toString(){

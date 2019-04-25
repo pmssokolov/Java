@@ -5,7 +5,6 @@ public class Yogurt extends DairyProduct {
     private String flavor_additive;
     private int volume;
     private String termination;
-    private String str;
 
     public Yogurt(){
         super();
@@ -50,20 +49,20 @@ public class Yogurt extends DairyProduct {
 
     @Override
     public String Manufacturer(){
-        str = "";
+        String nameManufacture = "";
+
         if (getName().equals("BrestLitovsk")){
-            str = "Brest";
+            nameManufacture = "Brest";
         }
         else if (getName().equals("Savushkin product")){
-            str = "Minsk";
+            nameManufacture = "Minsk";
         }
         else if (getName().equals("Prostokvashino")){
-            str = "Gomel";
+            nameManufacture = "Gomel";
         }
         else System.out.println("error");
-        return str;
+        return nameManufacture;
     }
-
 
     public String toString(){
         return "Yogurt:            "+getName()+"\nShelf life:        "+getShelf_life()+"\nAmount of protein: "+getAmount_of_protein()+"\nFatness:           "
